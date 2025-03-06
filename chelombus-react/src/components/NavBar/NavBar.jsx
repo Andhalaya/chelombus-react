@@ -11,9 +11,9 @@ function NavBar() {
       </div>
       <div className='nav'>
         <div className="box home">HOME</div>
-        <div className="databases">DATABASES</div>
-        <div className="aboutUs">ABOUT US</div>
-        <div className="contact">CONTACT</div>
+        <div className="box databases">DATABASES</div>
+        <div className="box aboutUs">ABOUT US</div>
+        <div className="box contact">CONTACT</div>
         <div className="search-btn">SEARCH</div>
       </div>
     </div>
