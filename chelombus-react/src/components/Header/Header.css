@@ -3,8 +3,8 @@
     height: 450px;
     justify-content: space-between;
     background-color: #EFEFF3;
-    top: 50px;
-    position: relative;
+    color: rgba(0, 0, 0, 0.807);  
+    
 }
 
 .text-container{ 
@@ -37,10 +37,21 @@
 
 .discover-btn{
     background-color: #3F91C1;
+    border: 2px solid #3F91C1;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Inria sans', sans-serif;
     color: white;
-    padding: 15px 0;
+    padding: 14px 0;
     border-radius: 30px;
     cursor: pointer;
-    width: 220px;
+    width: 200px;
     text-align: center;
+    transition: 0.5s;
+}
+
+.discover-btn:hover{
+    background-color: transparent;
+    color: #3F91C1;
+    border: 2px solid #3F91C1;
 }

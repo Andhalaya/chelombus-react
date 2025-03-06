@@ -1,0 +1,141 @@
+.main {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: rgba(0, 0, 0, 0.807);
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.databases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.option {
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 3px 3px 15px rgba(101, 101, 101, 0.418);
+    cursor: pointer;
+    position: relative;
+}
+
+.option-title {
+    text-align: center;
+    color: white;
+}
+
+.option-text {
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/*--------option button--------*/
+
+.option-btn {
+    background: none;
+    padding: 5px 30px;
+    font-family: calibri;
+    font-size: 1.2em;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid white;
+    color: white;
+    overflow: hidden;
+}
+
+.btn-text {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-btn:hover {
+    color: #3f91c1;
+    font-weight: bold;
+}
+
+.icon {
+    font-size: 20px;
+    color: #ffffff;
+    transition: all 0.3s linear;
+}
+
+.option-btn:hover .icon {
+    transform: translateX(10px);
+    color: #3f91c1;
+}
+
+
+.option-btn::before,
+.option-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color: white;
+    transition: all 300ms ease-in;
+}
+
+.option-btn::before {
+    opacity: 0.3;
+}
+
+.option-btn::after {
+    transition-delay: 0.3s;
+}
+
+.option-btn:hover::before,
+.option-btn:hover::after {
+    top: 0;
+}
+
+
+.orange {
+    background-color: #f59246ae;
+}
+
+.orange:hover {
+    background-color: #f59246;
+}
+
+.blue {
+    background-color: #3f91c18a;
+}
+
+.blue:hover {
+    background-color: #3f91c1;
+}
+
+.choose-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    max-width: 500px;
+}
+

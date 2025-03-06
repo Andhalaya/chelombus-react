@@ -14,7 +14,7 @@ function Header() {
           <p>Jkba kajsdha ksdkasdjkjasdh sadkjasdkadjhkajsdkjasdjasdh ksdkasdjkjasdhkajsdh
             oaisdjaisjdo
           </p>
-          <div className='discover-btn'>Discover more</div>
+          <div className='discover-btn'>DISCOVER MORE</div>
         </div>
       </div>
       
