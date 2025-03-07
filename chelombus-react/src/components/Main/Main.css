@@ -1,10 +1,17 @@
 .main {
-    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    color: #000000b3;
+    padding: 50px;
+}
+
+.cards {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    color: rgba(0, 0, 0, 0.807);
 }
 
 h4 {
@@ -23,8 +30,8 @@ h4 {
 }
 
 .option {
-    width: 300px;
-    padding: 30px;
+    width: 200px;
+    height: 200px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -33,102 +40,72 @@ h4 {
     box-shadow: 3px 3px 15px rgba(101, 101, 101, 0.418);
     cursor: pointer;
     position: relative;
-}
-
-.option-title {
-    text-align: center;
-    color: white;
-}
-
-.option-text {
-    color: white;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-}
-
-/*--------option button--------*/
-
-.option-btn {
-    background: none;
-    padding: 5px 30px;
-    font-family: calibri;
-    font-size: 1.2em;
-    border-radius: 100px;
-    cursor: pointer;
-    position: relative;
-    border: 2px solid white;
-    color: white;
     overflow: hidden;
+    transition: 0.5s;
 }
 
-.btn-text {
-    z-index: 1;
-    position: relative;
+
+.option .face {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 15px;
     align-items: center;
+    transition: 0.5s;
+
 }
 
-.option-btn:hover {
-    color: #3f91c1;
-    font-weight: bold;
+.option .face.face1 {
+    box-sizing: border-box;
+    padding: 15px 30px 30px 30px;
 }
+
+.option .face.face2 {
+    transition: 0.5s;
+}
+
+.option:hover .face.face2 {
+    height: 40px;
+    border-radius: 0 0 15px 15px;
+}
+
+
+.option .face.face2 img {
+    width: 80px; 
+    transition: 0.3s ease-in-out;
+}
+
+.option:hover .face.face2 img {
+    width: 50px; 
+}
+
+
+.btn-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #5b5b5bc3;
+}
+
 
 .icon {
     font-size: 20px;
-    color: #ffffff;
+    color: #5b5b5bc3;
     transition: all 0.3s linear;
-}
-
-.option-btn:hover .icon {
-    transform: translateX(10px);
-    color: #3f91c1;
-}
-
-
-.option-btn::before,
-.option-btn::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -100%;
-    left: 0;
-    background-color: white;
-    transition: all 300ms ease-in;
-}
-
-.option-btn::before {
-    opacity: 0.3;
-}
-
-.option-btn::after {
-    transition-delay: 0.3s;
-}
-
-.option-btn:hover::before,
-.option-btn:hover::after {
-    top: 0;
 }
 
 
 .orange {
-    background-color: #f59246ae;
-}
-
-.orange:hover {
     background-color: #f59246;
 }
 
 .blue {
-    background-color: #3f91c18a;
-}
-
-.blue:hover {
-    background-color: #3f91c1;
+    background: #3f91c1;
 }
 
 .choose-title {
@@ -139,3 +116,53 @@ h4 {
     max-width: 500px;
 }
 
+.map{
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapBox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 40px;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 2px 3px 15px rgba(101, 101, 101, 0.418);
+    padding: 30px;
+}
+
+.map-text-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.mapBox img{
+    width: 40%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.map-btn{
+    background-color: #f59246;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.map-btn:hover{
+    background-color: transparent;
+    color: #f59246;
+    border: 2px solid #f59246;
+    cursor: pointer;
+}
